@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="/css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="/css/custom.css" media="screen,projection" />
+
+    <title>KB HANIFA</title>
+</head>
+
+<body class="content">
+
+    <nav id="navbar" class="background-color-change">
+        <div class="nav-wrapper custom-container">
+            <a href="#" class="brand-logo">KB HANIFA</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down ">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT US</a></li>
+                <li><a href="#guru">GURU</a></li>
+                <li><a href="#vision">OUR VISION</a></li>
+                <li><a href="#mission">OUR MISSION</a></li>
+                <li><a href="#process">OUR PROCESS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <% for(let home of data_home) { %>
+
+        <!-- *****************************************Home section***************************************** -->
+
+        <div class="" id="home"></div>
+
+        <!-- *****************************************About section***************************************** -->
+
+        <div class="about-section" id="about">
+
+            <div class="row">
+                <img class="s6 about-image left" src="/img/office.jpg" alt="">
+
+                <div class="col s6 right ">
+                    <div class="about-paragraph">
+                        <h1>ABOUT US</h1>
+                        <p>
+                            <%= home.about_paragraph %>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- *****************************************Guru section***************************************** -->
+
+        <div class="guru-section" id="guru">
+            <div class="guru-section2">
+                <div class="container">
+                    <h1 class="center">Direktori Guru</h1>
+                    <p class="guru-paragraph center">
+                        <%= home.guru_paragraph %>
+                    </p>
+
+                    <div class="row space-between">
+
+                        <div class="col s6 l3">
+                            <img class="guru-icon " src="/img/<%= home.guru_img1 %>">
+                            <div class="white-text">
+                                <h5 class="center">
+                                    <%= home.guru_name1 %>
+                                </h5>
+                            </div>
+                        </div>
+
+                        <div class="col s6 l3">
+                            <img class="guru-icon " src="/img/<%= home.guru_img2 %>">
+                            <div class="white-text">
+                                <h5 class="center">
+                                    <%= home.guru_name2 %>
+                                </h5>
+                            </div>
+                        </div>
+
+                        <div class="col s6 l3">
+                            <img class="guru-icon " src="/img/<%= home.guru_img3 %>">
+                            <div class="white-text">
+                                <h5 class="center">
+                                    <%= home.guru_name3 %>
+                                </h5>
+                            </div>
+                        </div>
+
+                        <div class="col s6 l3">
+                            <img class="guru-icon " src="/img/<%= home.guru_img4 %>">
+                            <div class="white-text">
+                                <h5 class="center">
+                                    <%= home.guru_name4 %>
+                                </h5>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- *****************************************Vision section***************************************** -->
+
+        <div class="vision-section" id="vision">
+
+            <div class="row">
+                <img class="s6 vision-image left" src="/img/office.jpg" alt="">
+
+                <div class="col s6 right">
+                    <div class="vision-paragraph">
+                        <h1>OUR VISION</h1>
+                        <p>
+                            <%= home.vision_paragraph %>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- *****************************************mission section***************************************** -->
+
+        <div class="mission-section" id="mission">
+
+            <div class="container">
+                <h1 class="center">OUR MISSION</h1>
+                <p class="mission-paragraph center"></p>
+
+                <div class="row space-between">
+
+                    <div class="col s6 l4">
+                        <img class="mission-icon " src="/img/mission.png">
+                        <h5 class="center">MISSION ONE</h5>
+                        <p class="center">
+                            <%= home.mission_detail1 %>
+                        </p>
+                    </div>
+
+                    <div class="col s6 l4">
+                        <img class="mission-icon " src="/img/mission.png">
+                        <h5 class="center">MISSION TWO</h5>
+                        <p class="center">
+                            <%= home.mission_detail2 %>
+                        </p>
+                    </div>
+
+                    <div class="col s6 l4">
+                        <img class="mission-icon " src="/img/mission.png">
+                        <h5 class="center">MISSION THREE</h5>
+                        <p class="center">
+                            <%= home.mission_detail3 %>
+                        </p>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- *****************************************Process section***************************************** -->
+
+        <div class="process-section" id="process">
+
+            <div class="row">
+                <img class="s6 proces-image right" src="/img/office.jpg" alt="">
+
+                <div class="col s7 left ">
+                    <div class="process-paragraph">
+                        <h1>Our Process</h1>
+                        <p>
+                            <%= home.process_paragraph %>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <% } %>
+
+            <!-- *****************************************Footer section***************************************** -->
+
+            <footer class="page-footer background-color-change">
+                <div class="custom-container">
+
+                    <div class="row">
+
+                        <div class="col l4 s12 center">
+                            <h4 class="white-text">KB HANIFA</h5>
+                                <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Mauris nunc turpis, facilisis non risus sit amet, ultrices egestas dui. Ut blandit nibh sit
+                                    amet sodales faucibus.
+                                </p>
+                        </div>
+
+                        <div class="col l4 s12 center">
+                            <h4 class="white-text">ABOUT</h5>
+                                <p class="grey-text text-lighten-4">PAUD Hanifa adalah lembaga pendidikan anak usia dini
+                                    dengan
+                                    misi membantu anak menggali dan mengembangkan potensi kecerdasannya di usia kritis.
+                                    guru-guru kami yang sangat kompeten dan peduli serta berdedikasi tinggi untuk
+                                    menyediakan
+                                    pendidikan berkualitas tinggi serta terjangkau yang menarik dan selaras dengan
+                                    kurikulum
+                                    PAUD.
+                                </p>
+                        </div>
+
+                        <div class="col l4 s12 center">
+                            <h4 class="white-text">CONTACT</h5>
+                                <p class="grey-text text-lighten-4">Silahkan kontak kami<br>di nomor (0251)8341911,
+                                    <br>atau
+                                    bisa
+                                    hubungi whatsapp <br>kami di wa.me/08888888
+                                </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="footer-copyright">
+                    <div class="container">
+                        © 2023 Copyright Text
+                    </div>
+                </div>
+
+            </footer>
+
+            <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+            <script type="text/javascript" src="/js/materialize.min.js"></script>
+            <script type="text/javascript" src="/js/cfg.js"></script>
+            <script>
+                window.onscroll = function () { myFunction() };
+
+                var navbar = document.getElementById("navbar");
+                var sticky = navbar.offsetTop;
+
+                function myFunction() {
+                    if (window.pageYOffset >= sticky) {
+                        navbar.classList.add("sticky")
+                    } else {
+                        navbar.classList.remove("sticky");
+                    }
+                }
+            </script>
+</body>
+
+</html>

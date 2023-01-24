@@ -1,0 +1,182 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+
+    /*overflow: hidden; /* hide and disable scrollbar */
+
+    background-color: rgb(40, 131, 40) !important;
+}
+
+.background-color-change{
+    background-color: rgb(40, 131, 40) !important;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
+.space-between {
+    padding-top: 2vw;
+}
+
+.custom-container {
+    margin-left: 4vw !important;
+    margin-right: 4vw !important;
+}
+
+.mission-section {
+    background-color: rgb(85, 79, 79);
+    background-image: url(../img/kids.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    
+    font-size: x-large;
+
+    color: white;
+    height: 1080px;
+
+    padding-top: 100px;
+}
+
+.mission-paragraph {
+    padding-top: 1vw;
+    font-size: medium;
+}
+
+.mission-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.vision-section {
+
+    background-color: rgb(255, 255, 255);
+
+    height: fit-content;
+    width: 95%;
+    padding-right: 5vw;
+    
+
+}
+
+.shadow-box-red{
+    box-shadow: 0 16px 24px 2px rgb(255, 74, 74),0 6px 30px 5px rgba(0,0,0,0.12),0 8px 10px -7px rgba(0,0,0,0.2);
+}
+
+.shadow-box-blue{
+    box-shadow: 0 16px 24px 2px rgb(74, 150, 255),0 6px 30px 5px rgba(0,0,0,0.12),0 8px 10px -7px rgba(0,0,0,0.2);
+}
+
+.vision-image {
+    height: 1080px;
+}
+
+.vision-paragraph {
+    padding-top: 100px;
+    text-align: right;
+    font-size: 29px;
+}
+
+.about-section {
+
+    background-color: rgb(255, 255, 255);
+
+    height: fit-content;
+    width: 90%;
+    padding-right: 5vw;
+
+}
+
+.about-image {
+    height: 1080px;
+}
+
+.about-paragraph {
+    padding-top: 80px;
+    text-align: justify;
+    font-size: x-large;
+}
+
+.row{
+    margin-bottom: 0 !important;
+}
+
+.process-section{
+    background-color: rgb(255, 255, 255);
+
+    height: fit-content;
+    width: 95%;
+    padding-left: 2vw;
+    margin-left: 5%;
+}
+
+.proces-image {
+    height: 1080px;
+}
+
+.process-paragraph {
+    padding-top: 30%;
+    text-align: justify;
+    font-size: large;
+}
+
+.process-icon {
+    width: 20% !important;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.process-card{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    text-align: justify;
+    font-size: medium;
+}
+
+.guru-section{
+
+    color: black;
+    height: 1080px;
+    padding-bottom: 23%;
+
+}
+
+.guru-section2
+{
+    background-color:  rgb(255, 255, 255);
+    height: 100%;
+
+    padding-top: 100px;
+}
+
+.guru-paragraph{
+    
+    padding-top: 2vw;
+    font-size: 30px;
+}
+
+.guru-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    
+    background-color: rgb(228, 228, 228);
+    border: 5px solid rgb(228, 228, 228);
+}
