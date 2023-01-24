@@ -17,12 +17,12 @@ const db = mysql.createConnection({
 db.connect((err) => {
 
     if (err) throw err;
-    console.log("db conect");
+    console.log("Connection Established...");
 
     app.get("/", (req, res) => {
         const home = "SELECT * FROM home";
         db.query(home, (err, result) => {
-            
+
             const data_home = JSON.parse(JSON.stringify(result));
             res.render("index", { data_home: data_home });
 
